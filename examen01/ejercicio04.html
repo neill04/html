@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Imágenes del Logo</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mapa de Imágenes del Logo del Instituto</h1>
+
+    <p>Pasa el cursor sobre las áreas del logo para más información o para ir a diferentes enlaces.</p>
+
+    <!-- Imagen con mapa -->
+    <img src="ppd.png" alt="Logo del Instituto" usemap="#mapaLogo">
+
+    <!-- Definición del mapa de la imagen -->
+    <map name="mapaLogo">
+        <!-- Área 1: Define un círculo sobre una parte del logo que actúa como enlace -->
+        <area shape="circle" coords="150,150,50" href="https://www.instituto.edu" alt="Página Principal" title="Página Principal del Instituto">
+        
+        <!-- Área 2: Define un rectángulo sobre otra parte del logo -->
+        <area shape="rect" coords="200,200,300,300" href="https://www.instituto.edu/carreras" alt="Carreras" title="Carreras en el Instituto">
+        
+        <!-- Área 3: Define un polígono -->
+        <area shape="poly" coords="100,100,200,50,300,100,250,200" href="https://www.instituto.edu/contacto" alt="Contacto" title="Página de Contacto">
+    </map>
+
+</body>
+</html>
